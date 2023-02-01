@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_statistics" kind="class" language="C++" prot="public">
+    <compoundname>Statistics</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_statistics_1a9c6b0d20192c61b1ac9a8a3aac49235c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Statistics::count_</definition>
+        <argsstring></argsstring>
+        <name>count_</name>
+        <qualifiedname>Statistics::count_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_2.h" line="13" column="7" bodyfile="definicja_2.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_statistics_1a8aa346e2f8cff98af5a086554e5bf619" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Statistics::sum_</definition>
+        <argsstring></argsstring>
+        <name>sum_</name>
+        <qualifiedname>Statistics::sum_</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_2.h" line="14" column="10" bodyfile="definicja_2.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_statistics_1a037b1a4d1bfcb7e4c50444baf14b496c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Statistics::square_sum_</definition>
+        <argsstring></argsstring>
+        <name>square_sum_</name>
+        <qualifiedname>Statistics::square_sum_</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_2.h" line="15" column="10" bodyfile="definicja_2.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_statistics_1a744f6e451c2c55f36a39896f89dbab25" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; Statistics::numbers_</definition>
+        <argsstring></argsstring>
+        <name>numbers_</name>
+        <qualifiedname>Statistics::numbers_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_2.h" line="16" column="15" bodyfile="definicja_2.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_statistics_1a9561cfd955d5429883a037d6ddae6591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Statistics::Statistics</definition>
+        <argsstring>()=default</argsstring>
+        <name>Statistics</name>
+        <qualifiedname>Statistics::Statistics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_2.h" line="6" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_statistics_1a8871719f70b1d9a004b2a2b6e31574e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Statistics::AddNumber</definition>
+        <argsstring>(double num)</argsstring>
+        <name>AddNumber</name>
+        <qualifiedname>Statistics::AddNumber</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_2.h" line="8" column="8" bodyfile="definicja_2.h" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_statistics_1aac982cbf69f9bf8b80f7c881229e4678" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Statistics::Mean</definition>
+        <argsstring>() const</argsstring>
+        <name>Mean</name>
+        <qualifiedname>Statistics::Mean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_2.h" line="9" column="10" bodyfile="definicja_1.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_statistics_1acf4a33ba64ae6833203cac10bbce7b7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Statistics::StandardDeviation</definition>
+        <argsstring>() const</argsstring>
+        <name>StandardDeviation</name>
+        <qualifiedname>Statistics::StandardDeviation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_2.h" line="10" column="10" bodyfile="definicja_1.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_statistics_1a8871719f70b1d9a004b2a2b6e31574e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Statistics::AddNumber</definition>
+        <argsstring>(double num)</argsstring>
+        <name>AddNumber</name>
+        <qualifiedname>Statistics::AddNumber</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="deklaracja_2.cpp" line="3" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_statistics_1aac982cbf69f9bf8b80f7c881229e4678" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Statistics::Mean</definition>
+        <argsstring>() const</argsstring>
+        <name>Mean</name>
+        <qualifiedname>Statistics::Mean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="deklaracja_2.cpp" line="4" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_statistics_1acf4a33ba64ae6833203cac10bbce7b7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Statistics::StandardDeviation</definition>
+        <argsstring>() const</argsstring>
+        <name>StandardDeviation</name>
+        <qualifiedname>Statistics::StandardDeviation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="deklaracja_2.cpp" line="5" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="definicja_2.h" line="4" column="1" bodyfile="definicja_2.h" bodystart="4" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_statistics_1a8871719f70b1d9a004b2a2b6e31574e0" prot="public" virt="non-virtual"><scope>Statistics</scope><name>AddNumber</name></member>
+      <member refid="class_statistics_1a8871719f70b1d9a004b2a2b6e31574e0" prot="public" virt="non-virtual"><scope>Statistics</scope><name>AddNumber</name></member>
+      <member refid="class_statistics_1a9c6b0d20192c61b1ac9a8a3aac49235c" prot="private" virt="non-virtual"><scope>Statistics</scope><name>count_</name></member>
+      <member refid="class_statistics_1aac982cbf69f9bf8b80f7c881229e4678" prot="public" virt="non-virtual"><scope>Statistics</scope><name>Mean</name></member>
+      <member refid="class_statistics_1aac982cbf69f9bf8b80f7c881229e4678" prot="public" virt="non-virtual"><scope>Statistics</scope><name>Mean</name></member>
+      <member refid="class_statistics_1a744f6e451c2c55f36a39896f89dbab25" prot="private" virt="non-virtual"><scope>Statistics</scope><name>numbers_</name></member>
+      <member refid="class_statistics_1a037b1a4d1bfcb7e4c50444baf14b496c" prot="private" virt="non-virtual"><scope>Statistics</scope><name>square_sum_</name></member>
+      <member refid="class_statistics_1acf4a33ba64ae6833203cac10bbce7b7a" prot="public" virt="non-virtual"><scope>Statistics</scope><name>StandardDeviation</name></member>
+      <member refid="class_statistics_1acf4a33ba64ae6833203cac10bbce7b7a" prot="public" virt="non-virtual"><scope>Statistics</scope><name>StandardDeviation</name></member>
+      <member refid="class_statistics_1a9561cfd955d5429883a037d6ddae6591" prot="public" virt="non-virtual"><scope>Statistics</scope><name>Statistics</name></member>
+      <member refid="class_statistics_1a8aa346e2f8cff98af5a086554e5bf619" prot="private" virt="non-virtual"><scope>Statistics</scope><name>sum_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

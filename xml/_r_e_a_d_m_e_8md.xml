@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Bacal_Dominik</highlight></codeline>
+<codeline><highlight class="normal">Projekt<sp/>zaliczeniowy<sp/>na<sp/>potrzeby<sp/>przedmiotu<sp/>Zarządzanie<sp/>przedsięwzięciami<sp/>informatycznymi,<sp/></highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Utwórz<sp/>repozytorium<sp/>w<sp/>serwisie<sp/>github<sp/>o<sp/>nazwie<sp/>&apos;nazwisko_imie&apos;</highlight></codeline>
+<codeline><highlight class="normal">(bez<sp/>polskich<sp/>znaków).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.<sp/>Repozytorium<sp/>w<sp/>chwili<sp/>utworzenia<sp/>ma<sp/>zawierać<sp/>plik<sp/>licencji<sp/>oraz</highlight></codeline>
+<codeline><highlight class="normal">README.md<sp/>z<sp/>krótkim<sp/>opisem<sp/>projektu<sp/>(np.<sp/>Projekt<sp/>zaliczeniowy<sp/>na</highlight></codeline>
+<codeline><highlight class="normal">potrzeby<sp/>przedmiotu<sp/>Zarządzanie<sp/>przedsięwzięciami<sp/>informatycznymi,</highlight></codeline>
+<codeline><highlight class="normal">jakieś<sp/>punkty,<sp/>itp.).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">3.<sp/>Zapisać<sp/>zmiany<sp/>w<sp/>repozytorium,<sp/>nadać<sp/>etykietę<sp/>&apos;init&apos;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">4.<sp/>Dodać<sp/>dwa<sp/>pliki<sp/>z<sp/>rozszerzeniem<sp/>*.h<sp/>i<sp/>dwa<sp/>pliki<sp/>z<sp/>rozszerzeniem</highlight></codeline>
+<codeline><highlight class="normal">*.cpp<sp/>zawierającymi<sp/>deklaracje<sp/>i<sp/>definicje<sp/>klas<sp/>&apos;Sequence&apos;</highlight></codeline>
+<codeline><highlight class="normal">i<sp/>&apos;Statistics&apos;.<sp/>Klasy<sp/>muszą<sp/>zawierać:<sp/>konstruktor<sp/>domyślny,<sp/>konstruktor</highlight></codeline>
+<codeline><highlight class="normal">kopiujący,<sp/>destruktor,<sp/>funkcje<sp/>dostępu<sp/>do<sp/>składowych,<sp/>funkcje</highlight></codeline>
+<codeline><highlight class="normal">obliczeniowe.<sp/>Wprowadzić<sp/>zmiany<sp/>do<sp/>repozytorium<sp/>i<sp/>nadać<sp/>im<sp/>etykietę</highlight></codeline>
+<codeline><highlight class="normal">&apos;class&apos;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">5.<sp/>Napisać<sp/>dokumentację<sp/>do<sp/>klas.<sp/>W<sp/>dokumentacji<sp/>funkcji<sp/>muszą<sp/>pojawić</highlight></codeline>
+<codeline><highlight class="normal">się<sp/>skomplikowane<sp/>wzory<sp/>matematyczne<sp/>(np.<sp/>całki,<sp/>sumy,<sp/>itp.),<sp/>tabele</highlight></codeline>
+<codeline><highlight class="normal">i<sp/>obrazki/wykresy.<sp/>Można<sp/>wykorzystać<sp/>różnego<sp/>rodzaju<sp/>wzory<sp/>na<sp/>szeregi,</highlight></codeline>
+<codeline><highlight class="normal">gęstości<sp/>rozkładów<sp/>prawdopodobieństwa,<sp/>itp.<sp/>Dodać<sp/>plik<sp/>konfiguracyjny</highlight></codeline>
+<codeline><highlight class="normal">programu<sp/>doxygen.<sp/>Wprowadzić<sp/>zmiany<sp/>do<sp/>repozytorium<sp/>i<sp/>nadać<sp/>im<sp/>etykietę</highlight></codeline>
+<codeline><highlight class="normal">&apos;documentation&apos;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">6.<sp/>Dodać<sp/>dokumentację<sp/>w<sp/>formie<sp/>dodatkowych<sp/>stron<sp/>i<sp/>zmodyfikowanej</highlight></codeline>
+<codeline><highlight class="normal">strony<sp/>głównej.<sp/>Wprowadzić<sp/>zmiany<sp/>do<sp/>repozytorium<sp/>i<sp/>nadać<sp/>im<sp/>etykietę</highlight></codeline>
+<codeline><highlight class="normal">&apos;doxpage&apos;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">7.<sp/>Utworzyć<sp/>nową<sp/>gałąź<sp/>&apos;hotfix&apos;<sp/>i<sp/>wprowadzić<sp/>do<sp/>niej<sp/>deklarację</highlight></codeline>
+<codeline><highlight class="normal">i<sp/>definicję<sp/>klasy<sp/>&apos;ErrorHandle&apos;.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

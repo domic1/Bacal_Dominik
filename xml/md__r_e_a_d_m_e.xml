@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>Bacal_Dominik</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Projekt zaliczeniowy na potrzeby przedmiotu Zarządzanie przedsięwzięciami informatycznymi,<orderedlist>
+<listitem><para>Utwórz repozytorium w serwisie github o nazwie &apos;nazwisko_imie&apos; (bez polskich znaków).</para>
+</listitem><listitem><para>Repozytorium w chwili utworzenia ma zawierać plik licencji oraz README.md z krótkim opisem projektu (np. Projekt zaliczeniowy na potrzeby przedmiotu Zarządzanie przedsięwzięciami informatycznymi, jakieś punkty, itp.).</para>
+</listitem><listitem><para>Zapisać zmiany w repozytorium, nadać etykietę &apos;init&apos;.</para>
+</listitem><listitem><para>Dodać dwa pliki z rozszerzeniem *.h i dwa pliki z rozszerzeniem *.cpp zawierającymi deklaracje i definicje klas &apos;<ref refid="class_sequence" kindref="compound">Sequence</ref>&apos; i &apos;<ref refid="class_statistics" kindref="compound">Statistics</ref>&apos;. Klasy muszą zawierać: konstruktor domyślny, konstruktor kopiujący, destruktor, funkcje dostępu do składowych, funkcje obliczeniowe. Wprowadzić zmiany do repozytorium i nadać im etykietę &apos;class&apos;.</para>
+</listitem><listitem><para>Napisać dokumentację do klas. W dokumentacji funkcji muszą pojawić się skomplikowane wzory matematyczne (np. całki, sumy, itp.), tabele i obrazki/wykresy. Można wykorzystać różnego rodzaju wzory na szeregi, gęstości rozkładów prawdopodobieństwa, itp. Dodać plik konfiguracyjny programu doxygen. Wprowadzić zmiany do repozytorium i nadać im etykietę &apos;documentation&apos;.</para>
+</listitem><listitem><para>Dodać dokumentację w formie dodatkowych stron i zmodyfikowanej strony głównej. Wprowadzić zmiany do repozytorium i nadać im etykietę &apos;doxpage&apos;.</para>
+</listitem><listitem><para>Utworzyć nową gałąź &apos;hotfix&apos; i wprowadzić do niej deklarację i definicję klasy &apos;ErrorHandle&apos;. </para>
+</listitem></orderedlist>
+</para>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,38 @@
+\hypertarget{definicja__2_8h_source}{}\doxysection{definicja\+\_\+2.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_statistics}{Statistics}} \{}
+\DoxyCodeLine{5  \textcolor{keyword}{public}:}
+\DoxyCodeLine{6   \mbox{\hyperlink{class_statistics}{Statistics}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8   \textcolor{keywordtype}{void} AddNumber(\textcolor{keywordtype}{double} num);}
+\DoxyCodeLine{9   \textcolor{keywordtype}{double} Mean() \textcolor{keyword}{const};}
+\DoxyCodeLine{10   \textcolor{keywordtype}{double} StandardDeviation() \textcolor{keyword}{const};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12  \textcolor{keyword}{private}:}
+\DoxyCodeLine{13   \textcolor{keywordtype}{int} count\_ = 0;}
+\DoxyCodeLine{14   \textcolor{keywordtype}{double} sum\_ = 0.0;}
+\DoxyCodeLine{15   \textcolor{keywordtype}{double} square\_sum\_ = 0.0;}
+\DoxyCodeLine{16   std::vector<double> numbers\_;}
+\DoxyCodeLine{17 \};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keywordtype}{void} Statistics::AddNumber(\textcolor{keywordtype}{double} num) \{}
+\DoxyCodeLine{20   numbers\_.push\_back(num);}
+\DoxyCodeLine{21   ++count\_;}
+\DoxyCodeLine{22   sum\_ += num;}
+\DoxyCodeLine{23   square\_sum\_ += num * num;}
+\DoxyCodeLine{24 \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keywordtype}{double} Statistics::Mean()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{27   \textcolor{keywordflow}{return} sum\_ / count\_;}
+\DoxyCodeLine{28 \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keywordtype}{double} Statistics::StandardDeviation()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{31   \textcolor{keywordtype}{double} mean = Mean();}
+\DoxyCodeLine{32   \textcolor{keywordflow}{return} sqrt(square\_sum\_ / count\_ -\/ mean * mean);}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}

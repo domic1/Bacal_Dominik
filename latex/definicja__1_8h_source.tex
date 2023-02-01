@@ -1,0 +1,118 @@
+\hypertarget{definicja__1_8h_source}{}\doxysection{definicja\+\_\+1.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_sequence}{Sequence}} \{}
+\DoxyCodeLine{5  \textcolor{keyword}{public}:}
+\DoxyCodeLine{6   \textcolor{keywordtype}{void} append(T element) \{}
+\DoxyCodeLine{7     elements\_.push\_back(element);}
+\DoxyCodeLine{8   \}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10   T at(\textcolor{keywordtype}{int} index)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{11     \textcolor{keywordflow}{return} elements\_.at(index);}
+\DoxyCodeLine{12   \}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14   \textcolor{keywordtype}{int} size()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{15     \textcolor{keywordflow}{return} elements\_.size();}
+\DoxyCodeLine{16   \}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18  \textcolor{keyword}{private}:}
+\DoxyCodeLine{19   std::vector<T> elements\_;}
+\DoxyCodeLine{20 \};}
+\DoxyCodeLine{21 W powyższym przykładzie, \mbox{\hyperlink{class_sequence}{Sequence}} jest szablonem klasy, co pozwala na przechowywanie elementów różnego typu. Klasa przechowuje elementy w wektorze elements\_, a metody append, at i size pozwalają na dodawanie elementów, dostęp \textcolor{keywordflow}{do} konkretnego elementu i pobieranie liczby elementów w sekwencji.}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 Dominik Bącal}
+\DoxyCodeLine{27 deklaracja klasy \textcolor{stringliteral}{"{}Sequence"{}} w języku c++}
+\DoxyCodeLine{28 Poniżej przedstawiono deklarację klasy \mbox{\hyperlink{class_sequence}{Sequence}} w języku C++:}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 cpp}
+\DoxyCodeLine{31 Copy code}
+\DoxyCodeLine{32 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{33 \textcolor{keyword}{class }\mbox{\hyperlink{class_sequence}{Sequence}} \{}
+\DoxyCodeLine{34  \textcolor{keyword}{public}:}
+\DoxyCodeLine{35   \textcolor{keywordtype}{void} append(T element);}
+\DoxyCodeLine{36   T at(\textcolor{keywordtype}{int} index) \textcolor{keyword}{const};}
+\DoxyCodeLine{37   \textcolor{keywordtype}{int} size() \textcolor{keyword}{const};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39  \textcolor{keyword}{private}:}
+\DoxyCodeLine{40   std::vector<T> elements\_;}
+\DoxyCodeLine{41 \};}
+\DoxyCodeLine{42 W powyższej deklaracji klasa \mbox{\hyperlink{class_sequence}{Sequence}} jest szablonem klasy, co oznacza, że można ją zastosować \textcolor{keywordflow}{do} różnych typów danych (T). Klasa posiada trzy publiczne metody: append \textcolor{keywordflow}{do} dodawania elementów \textcolor{keywordflow}{do} sekwencji, at \textcolor{keywordflow}{do} dostępu \textcolor{keywordflow}{do} konkretnego elementu i size \textcolor{keywordflow}{do} pobierania liczby elementów w sekwencji. Wewnętrznie klasa przechowuje elementy w wektorze elements\_.}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 Dominik Bącal}
+\DoxyCodeLine{48 definicja klasy \textcolor{stringliteral}{"{}Statistics"{}} w języku c++}
+\DoxyCodeLine{49 Klasa \textcolor{stringliteral}{"{}Statistics"{}} w języku C++ może reprezentować różne statystyczne funkcje, takie jak średnia, odchylenie standardowe i inne. Poniżej przedstawiono przykład implementacji klasy \mbox{\hyperlink{class_statistics}{Statistics}}:}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 cpp}
+\DoxyCodeLine{52 Copy code}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{keyword}{class }\mbox{\hyperlink{class_statistics}{Statistics}} \{}
+\DoxyCodeLine{57  \textcolor{keyword}{public}:}
+\DoxyCodeLine{58   \mbox{\hyperlink{class_statistics}{Statistics}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60   \textcolor{keywordtype}{void} AddNumber(\textcolor{keywordtype}{double} num);}
+\DoxyCodeLine{61   \textcolor{keywordtype}{double} Mean() \textcolor{keyword}{const};}
+\DoxyCodeLine{62   \textcolor{keywordtype}{double} StandardDeviation() \textcolor{keyword}{const};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64  \textcolor{keyword}{private}:}
+\DoxyCodeLine{65   \textcolor{keywordtype}{int} count\_ = 0;}
+\DoxyCodeLine{66   \textcolor{keywordtype}{double} sum\_ = 0.0;}
+\DoxyCodeLine{67   \textcolor{keywordtype}{double} square\_sum\_ = 0.0;}
+\DoxyCodeLine{68   std::vector<double> numbers\_;}
+\DoxyCodeLine{69 \};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{keywordtype}{void} Statistics::AddNumber(\textcolor{keywordtype}{double} num) \{}
+\DoxyCodeLine{72   numbers\_.push\_back(num);}
+\DoxyCodeLine{73   ++count\_;}
+\DoxyCodeLine{74   sum\_ += num;}
+\DoxyCodeLine{75   square\_sum\_ += num * num;}
+\DoxyCodeLine{76 \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \textcolor{keywordtype}{double} Statistics::Mean()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{79   \textcolor{keywordflow}{return} sum\_ / count\_;}
+\DoxyCodeLine{80 \}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{keywordtype}{double} Statistics::StandardDeviation()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{83   \textcolor{keywordtype}{double} mean = Mean();}
+\DoxyCodeLine{84   \textcolor{keywordflow}{return} sqrt(square\_sum\_ / count\_ -\/ mean * mean);}
+\DoxyCodeLine{85 \}}
+\DoxyCodeLine{86 W powyższym przykładzie, klasa \mbox{\hyperlink{class_statistics}{Statistics}} posiada trzy publiczne metody: AddNumber \textcolor{keywordflow}{do} dodawania liczb \textcolor{keywordflow}{do} obliczeń statystycznych, Mean \textcolor{keywordflow}{do} obliczania średniej i StandardDeviation \textcolor{keywordflow}{do} obliczania odchylenia standardowego. Klasa przechowuje wszystkie dodane liczby w wektorze numbers\_, a także trzy zmienne pomocnicze: count\_ \textcolor{keywordflow}{do} zliczania liczby dodanych liczb, sum\_ \textcolor{keywordflow}{do} zliczania sumy dodanych liczb i square\_sum\_ \textcolor{keywordflow}{do} zliczania sumy kwadratów dodanych liczb. W ten sposób, można w efektywny sposób obliczać średnią i odchylenie standardowe bez konieczności ponownego przeglądania wektora numbers\_.}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 Dominik Bącal}
+\DoxyCodeLine{92 deklaracja klasy \textcolor{stringliteral}{"{}Statistics"{}} w języku c++}
+\DoxyCodeLine{93 Poniżej przedstawiono deklarację klasy \mbox{\hyperlink{class_statistics}{Statistics}} w języku C++:}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 cpp}
+\DoxyCodeLine{96 Copy code}
+\DoxyCodeLine{97 \textcolor{keyword}{class }\mbox{\hyperlink{class_statistics}{Statistics}} \{}
+\DoxyCodeLine{98  \textcolor{keyword}{public}:}
+\DoxyCodeLine{99   \textcolor{keywordtype}{void} AddNumber(\textcolor{keywordtype}{double} num);}
+\DoxyCodeLine{100   \textcolor{keywordtype}{double} Mean() \textcolor{keyword}{const};}
+\DoxyCodeLine{101   \textcolor{keywordtype}{double} StandardDeviation() \textcolor{keyword}{const};}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103  \textcolor{keyword}{private}:}
+\DoxyCodeLine{104   \textcolor{keywordtype}{int} count\_ = 0;}
+\DoxyCodeLine{105   \textcolor{keywordtype}{double} sum\_ = 0.0;}
+\DoxyCodeLine{106   \textcolor{keywordtype}{double} square\_sum\_ = 0.0;}
+\DoxyCodeLine{107   std::vector<double> numbers\_;}
+\DoxyCodeLine{108 \};}
+\DoxyCodeLine{109 W powyższej deklaracji klasa \mbox{\hyperlink{class_statistics}{Statistics}} posiada trzy publiczne metody: AddNumber \textcolor{keywordflow}{do} dodawania liczb \textcolor{keywordflow}{do} obliczeń statystycznych, Mean \textcolor{keywordflow}{do} obliczania średniej i StandardDeviation \textcolor{keywordflow}{do} obliczania odchylenia standardowego. Klasa także posiada cztery zmienne prywatne: count\_ \textcolor{keywordflow}{do} zliczania liczby dodanych liczb, sum\_ \textcolor{keywordflow}{do} zliczania sumy dodanych liczb, square\_sum\_ \textcolor{keywordflow}{do} zliczania sumy kwadratów dodanych liczb i wektor numbers\_ \textcolor{keywordflow}{do} przechowywania wszystkich dodanych liczb.}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113 }
+
+\end{DoxyCode}

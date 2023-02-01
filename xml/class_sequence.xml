@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_sequence" kind="class" language="C++" prot="public">
+    <compoundname>Sequence</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sequence_1a0756d86a9996ab3f92a2151e5828bb77" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; Sequence&lt; T &gt;::elements_</definition>
+        <argsstring></argsstring>
+        <name>elements_</name>
+        <qualifiedname>Sequence::elements_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_1.h" line="19" column="15" bodyfile="definicja_1.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sequence_1ac58abbe10176034cd4b63347c7887c06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sequence&lt; T &gt;::append</definition>
+        <argsstring>(T element)</argsstring>
+        <name>append</name>
+        <qualifiedname>Sequence::append</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_1.h" line="6" column="8" bodyfile="definicja_1.h" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sequence_1ae56bea213ba91d9ad6913c8b7417cd65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Sequence&lt; T &gt;::at</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>at</name>
+        <qualifiedname>Sequence::at</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_1.h" line="10" column="5" bodyfile="definicja_1.h" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sequence_1a515380117228535de97e3c2ff1d0bc04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Sequence&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>Sequence::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="definicja_1.h" line="14" column="7" bodyfile="definicja_1.h" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sequence_1ac58abbe10176034cd4b63347c7887c06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sequence&lt; T &gt;::append</definition>
+        <argsstring>(T element)</argsstring>
+        <name>append</name>
+        <qualifiedname>Sequence::append</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="deklaracja.cpp" line="4" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sequence_1ae56bea213ba91d9ad6913c8b7417cd65" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Sequence&lt; T &gt;::at</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>at</name>
+        <qualifiedname>Sequence::at</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="deklaracja.cpp" line="5" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sequence_1a515380117228535de97e3c2ff1d0bc04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Sequence&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>Sequence::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="deklaracja.cpp" line="6" column="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="definicja_1.h" line="4" column="1" bodyfile="definicja_1.h" bodystart="4" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_sequence_1ac58abbe10176034cd4b63347c7887c06" prot="public" virt="non-virtual"><scope>Sequence</scope><name>append</name></member>
+      <member refid="class_sequence_1ac58abbe10176034cd4b63347c7887c06" prot="public" virt="non-virtual"><scope>Sequence</scope><name>append</name></member>
+      <member refid="class_sequence_1ae56bea213ba91d9ad6913c8b7417cd65" prot="public" virt="non-virtual"><scope>Sequence</scope><name>at</name></member>
+      <member refid="class_sequence_1ae56bea213ba91d9ad6913c8b7417cd65" prot="public" virt="non-virtual"><scope>Sequence</scope><name>at</name></member>
+      <member refid="class_sequence_1a0756d86a9996ab3f92a2151e5828bb77" prot="private" virt="non-virtual"><scope>Sequence</scope><name>elements_</name></member>
+      <member refid="class_sequence_1a515380117228535de97e3c2ff1d0bc04" prot="public" virt="non-virtual"><scope>Sequence</scope><name>size</name></member>
+      <member refid="class_sequence_1a515380117228535de97e3c2ff1d0bc04" prot="public" virt="non-virtual"><scope>Sequence</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
